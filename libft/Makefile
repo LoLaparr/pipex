@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: lolaparr <lolaparr@student.42.fr>          +#+  +:+       +#+         #
+#    By: louislaparre <louislaparre@student.42.f    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/21 12:41:57 by lolaparr          #+#    #+#              #
-#    Updated: 2023/04/17 16:20:20 by lolaparr         ###   ########.fr        #
+#    Updated: 2023/04/19 18:16:25 by louislaparr      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,6 +35,7 @@ SRCS		:= 	\
 			strings/ft_strjoin.c \
 			strings/ft_striteri.c \
 			strings/ft_strdup.c \
+			strings/ft_strncmp.c \
 			lst/ft_lstadd_back.c \
 			lst/ft_lstadd_front.c \
 			lst/ft_lstclear.c \

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lolaparr <lolaparr@student.42.fr>          +#+  +:+       +#+        */
+/*   By: louislaparre <louislaparre@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/21 14:15:24 by lolaparr          #+#    #+#             */
-/*   Updated: 2023/04/17 16:20:34 by lolaparr         ###   ########.fr       */
+/*   Updated: 2023/04/19 18:16:00 by louislaparr      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,5 +53,7 @@ t_lt			*ft_lstmap(t_lt *lst, void *(*f)(void *), void (*del)(void *));
 t_lt			*ft_lstnew(void *content);
 int				ft_lstsize(t_lt *lst);
 char			*ft_strdup(const char *s);
+int				ft_strncmp(const char *s1, const char *s2, size_t n);
+
 
 #endif

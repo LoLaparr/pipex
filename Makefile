@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: lolaparr <lolaparr@student.42.fr>          +#+  +:+       +#+         #
+#    By: louislaparre <louislaparre@student.42.f    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/18 14:52:45 by lolaparr          #+#    #+#              #
-#    Updated: 2023/04/13 17:41:53 by lolaparr         ###   ########.fr        #
+#    Updated: 2023/04/19 19:42:45 by louislaparr      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,6 +14,7 @@ NAME		:= pipex
 SRC_DIR		:= src
 BUILD_DIR:= .build
 SRCS		:=  pipex.c \
+				utils.c
 
 SRCS		:= $(SRCS:%=$(SRC_DIR)/%)
 OBJS		:= $(SRCS:$(SRC_DIR)/%.c=$(BUILD_DIR)/%.o)
