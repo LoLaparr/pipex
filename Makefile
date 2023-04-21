@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: louislaparre <louislaparre@student.42.f    +#+  +:+       +#+         #
+#    By: lolaparr <lolaparr@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/18 14:52:45 by lolaparr          #+#    #+#              #
-#    Updated: 2023/04/19 19:42:45 by louislaparr      ###   ########.fr        #
+#    Updated: 2023/04/21 18:04:18 by lolaparr         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,8 +20,8 @@ SRCS		:= $(SRCS:%=$(SRC_DIR)/%)
 OBJS		:= $(SRCS:$(SRC_DIR)/%.c=$(BUILD_DIR)/%.o)
 DEPS		:= $(OBJS:.o=.d)
 
-CC			:= cc -g3
-CFLAGS		:= -Wall -Wextra -Werror
+CC			:= cc
+CFLAGS		:= -Wall -Wextra -Werror -g3
 CPPFLAGS	:= -MMD -MP -I include
 RM			:= rm -rf
 MAKEFLAGS	+= --no-print-directory
