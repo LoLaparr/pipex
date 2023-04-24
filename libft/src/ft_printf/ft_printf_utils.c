@@ -6,11 +6,12 @@
 /*   By: lolaparr <lolaparr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/26 14:37:04 by louislaparr       #+#    #+#             */
-/*   Updated: 2023/03/27 17:53:36 by lolaparr         ###   ########.fr       */
+/*   Updated: 2023/04/24 17:56:11 by lolaparr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+#include <string.h>
 
 int	ft_putchar(char c)
 {
@@ -25,10 +26,6 @@ int	ft_print_str(char *str)
 	i = 0;
 	if (!str)
 		str = "(null)";
-	while (str[i])
-	{
-		ft_putchar(str[i]);
-		++i;
-	}
+	write(1, str, strlen(str));//FIXME
 	return (i);
 }
